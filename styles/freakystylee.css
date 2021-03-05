@@ -180,11 +180,11 @@ hr {
 	line-height: 1.4em;
 }
 
-#media:hover {
+.media:hover {
 	cursor: pointer;
 }
 
-#media:hover .media-highlight {
+.media:hover .media-highlight {
 	background-position: -99.99% 0;
 }
 
