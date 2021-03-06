@@ -127,7 +127,7 @@ a {
 }
 
 a:hover {
-	background-position: -99% 0;
+	background-position: -99.99% 0;
 }
 
 ::-moz-selection {
