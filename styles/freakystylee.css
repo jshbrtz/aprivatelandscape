@@ -48,37 +48,45 @@ section {
 	text-align: justify;
 }
 
-.two-column {
+.column {
 	display: inline-block;
 	width: 48%;
 	text-align: left;
+	vertical-align: top;
 }
 
 .three-column {
 	display: inline-block;
-	width: 30%;
+	width: 31%;
 }
 
 .four-column {
 	display: inline-block;
-	width: 23%;
+	max-width: 24%;
 	text-align: left;
-	vertical-align: top;
 }
 
-.album {
-	max-width: 100%;
-	vertical-align: top;
+.column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
 .book {
 	max-height: 288px;
-	max-width: 100%;
-	object-fit: contain;
+	vertical-align: bottom;
 }
 
-.art {
-	max-width: 100%;
+.art, .album {
+	max-width: 97%;
 }
 
 .row:after {
@@ -135,6 +143,10 @@ a {
 
 a:hover {
 	background-position: -99.99% 0;
+}
+
+img a {
+	
 }
 
 ::-moz-selection {
